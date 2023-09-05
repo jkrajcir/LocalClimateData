@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-custstgacct--synw-projects-stprojects",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/55014044-8bc1-4b79-bdb5-a422432b39d6/resourceGroups/rg-projects/providers/Microsoft.Storage/storageAccounts/stprojects",
+		"groupId": "dfs",
+		"fqdns": [
+			"stprojects.dfs.core.windows.net"
+		]
+	}
+}
