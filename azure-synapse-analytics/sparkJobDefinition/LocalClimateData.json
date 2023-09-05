@@ -16,13 +16,13 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "486daf1c-1fa2-4caa-8c8a-fe4f16837284",
+				"spark.autotune.trackingId": "5c1c4d7b-4442-472e-a02e-59d6206d34e3",
 				"spark.synapse.context.sjdname": "LocalClimateData",
 				"spark.yarn.appMasterEnv.DOTNET_ASSEMBLY_SEARCH_PATHS": "./udfs"
 			},
 			"args": [
 				"abfss://synw-projects@stprojects.dfs.core.windows.net/LocalClimateData.zip",
-				"LocalClimateData"
+				"LocalClimateData.exe"
 			],
 			"jars": [],
 			"pyFiles": [
