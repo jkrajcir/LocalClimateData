@@ -1,0 +1,42 @@
+{
+	"name": "LocalClimateData Spark job definition",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "SPprojects",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "3.2",
+		"language": "csharp",
+		"scanFolder": false,
+		"jobProperties": {
+			"name": "LocalClimateData Spark job definition",
+			"file": "local:///usr/hdp/current/spark2-client/jars/microsoft-spark.jar",
+			"className": "org.apache.spark.deploy.dotnet.DotnetRunner",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "3",
+				"spark.dynamicAllocation.maxExecutors": "3",
+				"spark.autotune.trackingId": "faffa63a-8e1b-470e-8072-cf9dd5a1fe83",
+				"spark.synapse.context.sjdname": "LocalClimateData Spark job definition",
+				"spark.yarn.appMasterEnv.DOTNET_ASSEMBLY_SEARCH_PATHS": "./udfs"
+			},
+			"args": [
+				"abfss://synw-projects@stprojects.dfs.core.windows.net/synw-projects/LocalClimateData.zip",
+				"LocalClimateData"
+			],
+			"jars": [],
+			"pyFiles": [
+				""
+			],
+			"files": [],
+			"archives": [
+				"abfss://synw-projects@stprojects.dfs.core.windows.net/synw-projects/LocalClimateData.zip#udfs"
+			],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 3
+		}
+	}
+}
