@@ -16,12 +16,12 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "ca790387-ad72-4e44-bfff-db9cff0c81a7",
+				"spark.autotune.trackingId": "11dbb1e1-6a37-48d3-8487-dd1703f1c73f",
 				"spark.synapse.context.sjdname": "LocalClimateData Spark job definition",
 				"spark.yarn.appMasterEnv.DOTNET_ASSEMBLY_SEARCH_PATHS": "./udfs"
 			},
 			"args": [
-				"abfss://synw-projects@stprojects.dfs.core.windows.net/synw-projects/LocalClimateData.zip",
+				"abfss://synw-projects@stprojects.dfs.core.windows.net/LocalClimateData.zip",
 				"LocalClimateData"
 			],
 			"jars": [],
@@ -30,7 +30,7 @@
 			],
 			"files": [],
 			"archives": [
-				"abfss://synw-projects@stprojects.dfs.core.windows.net/synw-projects/LocalClimateData.zip#udfs"
+				"abfss://synw-projects@stprojects.dfs.core.windows.net/LocalClimateData.zip#udfs"
 			],
 			"driverMemory": "28g",
 			"driverCores": 4,
