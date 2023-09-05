@@ -1,5 +1,5 @@
 {
-	"name": "LocalClimateData Spark job definition",
+	"name": "LocalClimateData",
 	"properties": {
 		"targetBigDataPool": {
 			"referenceName": "SPprojects",
@@ -9,15 +9,15 @@
 		"language": "csharp",
 		"scanFolder": false,
 		"jobProperties": {
-			"name": "LocalClimateData Spark job definition",
+			"name": "LocalClimateData",
 			"file": "local:///usr/hdp/current/spark2-client/jars/microsoft-spark.jar",
 			"className": "org.apache.spark.deploy.dotnet.DotnetRunner",
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "11dbb1e1-6a37-48d3-8487-dd1703f1c73f",
-				"spark.synapse.context.sjdname": "LocalClimateData Spark job definition",
+				"spark.autotune.trackingId": "486daf1c-1fa2-4caa-8c8a-fe4f16837284",
+				"spark.synapse.context.sjdname": "LocalClimateData",
 				"spark.yarn.appMasterEnv.DOTNET_ASSEMBLY_SEARCH_PATHS": "./udfs"
 			},
 			"args": [
