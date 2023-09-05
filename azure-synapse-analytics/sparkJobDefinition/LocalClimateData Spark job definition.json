@@ -14,9 +14,9 @@
 			"className": "org.apache.spark.deploy.dotnet.DotnetRunner",
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
-				"spark.dynamicAllocation.minExecutors": "3",
-				"spark.dynamicAllocation.maxExecutors": "3",
-				"spark.autotune.trackingId": "faffa63a-8e1b-470e-8072-cf9dd5a1fe83",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "ca790387-ad72-4e44-bfff-db9cff0c81a7",
 				"spark.synapse.context.sjdname": "LocalClimateData Spark job definition",
 				"spark.yarn.appMasterEnv.DOTNET_ASSEMBLY_SEARCH_PATHS": "./udfs"
 			},
@@ -36,7 +36,7 @@
 			"driverCores": 4,
 			"executorMemory": "28g",
 			"executorCores": 4,
-			"numExecutors": 3
+			"numExecutors": 2
 		}
 	}
 }
