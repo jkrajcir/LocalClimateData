@@ -48,7 +48,7 @@ Spark.NET library is being used to implement the Spark job to perform data prepa
 
 ## Results (text files)
 
-- [Monthly aggregations grouped by year](./results/month.txt)
+- [Monthly aggregations grouped by year](./results/monthly.txt)
 - [Daily aggregations grouped by day of the week](./results/daily.txt)
 - [Hourly aggregations grouped by hour of the day](./results/hourly.txt)
 
