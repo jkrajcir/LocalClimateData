@@ -99,7 +99,6 @@ namespace LocalClimateData
 
             monthlySummaryClimateData.WithColumn("MonthlyDaysWithLT0Temp", monthlySummaryClimateData.Col("MonthlyDaysWithLT0Temp").Cast("int"));
             monthlySummaryClimateData.WithColumn("MonthlyGreatestPrecip", monthlySummaryClimateData.Col("MonthlyGreatestPrecip").Cast("double"));
-            monthlySummaryClimateData.WithColumn("MonthlyTotalLiquidPrecipitation", monthlySummaryClimateData.Col("MonthlyDaysWithLT0Temp").Cast("double"));
             Dictionary<string, string?> monthlyGroupedColumnsToAliases = new Dictionary<string, string?>()
             {
                 { "AWND", "Monthly Average Wind Speed" },
