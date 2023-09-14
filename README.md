@@ -34,15 +34,15 @@ Spark.NET library is being used to implement the Spark job to perform data prepa
 1. CSV dataset is written to parquet files
 2. Filter out unnecessary columns, including:
 
-- Columns that don't have any values or only has one distinct value
-- Redundant columns
-- Raw data column
+    - Columns that don't have any values or only has one distinct value
+    - Redundant columns
+    - Raw data column
 
 3. Split filtered DataFrame into three DataFrames based on their report type:
 
-- Monthly summary DataFrame
-- Daily summary DataFrame
-- Hourly DataFrame
+    - Monthly summary DataFrame
+    - Daily summary DataFrame
+    - Hourly DataFrame
 
 4. Cast several columns and perform some aggregation on each DataFrame, results shown below
 
